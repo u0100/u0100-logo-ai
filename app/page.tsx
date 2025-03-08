@@ -47,7 +47,7 @@ const backgroundColors = [
 ];
 
 export default function Page() {
-  const [userAPIKey, setUserAPIKey] = useState(() => {
+  const [userAPIKey] = useState(() => { //const [userAPIKey, setUserAPIKey] = useState(() => {
     if (typeof window !== "undefined") {
       return localStorage.getItem("userAPIKey") || "";
     }
